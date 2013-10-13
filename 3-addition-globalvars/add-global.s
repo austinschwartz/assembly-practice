@@ -9,7 +9,7 @@ printfArg:
 	.comm	b,4,4
 	.comm	c,4,4
 
-.section	text
+.text
 addra:	.word a
 addrb:	.word b
 addrc:	.word c

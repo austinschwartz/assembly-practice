@@ -1,6 +1,5 @@
 .text
-	.global main
-
+.global main
 main:
 	stmfd	sp!, {fp, lr}
 	ldr 	r0, hw
@@ -10,5 +9,6 @@ main:
 hw:
 	.word 	helloWorld
 
+.section	.rodata
 helloWorld:
 	.ascii	"Hello world!\000"

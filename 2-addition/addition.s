@@ -1,6 +1,5 @@
 .text
     .global main
-
 main:
     stmfd   sp!, {fp, lr}
     mov     r2, #2
@@ -15,7 +14,7 @@ main:
 printfArgAddr:
     .word   printfArg
 
+.section .rodata
 printfArg:
     .ascii  "c=%d\n" 
-    .text
 
