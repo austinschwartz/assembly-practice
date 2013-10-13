@@ -1,21 +1,21 @@
-.section 	.rodata
+	.section 	.rodata
 printfArg:
 	.ascii	"c=%d\n"
 
-.section	.data
+	.section	.data
 	.align	2
 	
 	.comm	a,4,4
 	.comm	b,4,4
 	.comm	c,4,4
 
-.text
+	.text
 addra:	.word a
 addrb:	.word b
 addrc:	.word c
 addrPrintfArg:	.word printfArg
 
-.global main
+	.global main
 main:
 	stmfd	sp!, {fp, lr}
 

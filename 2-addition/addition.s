@@ -1,20 +1,20 @@
-.text
-    .global main
+	.text
+	.global main
 main:
-    stmfd   sp!, {fp, lr}
-    mov     r2, #2
-    mov     r3, #3
-    add     r1, r2, r3
+	stmfd	sp!, {fp, lr}
+	mov	r2, #2
+	mov	r3, #3
+	add	r1, r2, r3
 
-    ldr     r0, printfArgAddr
-    bl      printf
+	ldr	r0, printfArgAddr
+	bl	printf
 
-    ldmfd   sp!, {fp, pc}
+	ldmfd	sp!, {fp, pc}
 
 printfArgAddr:
-    .word   printfArg
+	.word	printfArg
 
-.section .rodata
+	.section	.rodata
 printfArg:
-    .ascii  "c=%d\n" 
+	.ascii	"c=%d\n" 
 
