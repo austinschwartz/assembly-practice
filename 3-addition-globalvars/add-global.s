@@ -1,14 +1,15 @@
 .section 	.rodata
 printfArg:
-	.ascii		"c=%d\n"
-	.section	.data
-	.align 		2
+	.ascii	"c=%d\n"
+
+.section	.data
+	.align	2
 	
 	.comm	a,4,4
 	.comm	b,4,4
 	.comm	c,4,4
 
-.text
+.section	text
 addra:	.word a
 addrb:	.word b
 addrc:	.word c
