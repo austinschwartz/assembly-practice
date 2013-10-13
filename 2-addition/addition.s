@@ -11,8 +11,6 @@ main:
     bl      printf
 
     ldmfd   sp!, {fp, pc}
-    
-
 
 printfArgAddr:
     .word   printfArg
