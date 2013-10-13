@@ -3,12 +3,12 @@
 
 main:
 	stmfd	sp!, {fp, lr}
-	ldr 	r0, .hw
+	ldr 	r0, hw
 	bl 	puts
 	ldmfd	sp!, {fp, pc}
 
-.hw:
-	.word 	.helloWorld
+hw:
+	.word 	helloWorld
 
-.helloWorld:
+helloWorld:
 	.ascii	"Hello world!\000"
