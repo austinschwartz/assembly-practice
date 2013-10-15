@@ -51,22 +51,18 @@ main:
 	bl	printf
 	b	printaverage
 
-	ldmfd	sp!, {fp, pc}	
-
 bgreater:
 
 	ldr	r0, addrPrintMax
+	ldr	r1, addrb
+	ldr	r1, [r1]
 	bl	printf
-	
-	mov	r2, r1
 
 	ldr	r0, addrPrintMin
 	ldr	r1, addra
 	ldr	r1, [r1]
 	bl	printf
 	b	printaverage
-
-	ldmfd	sp!, {fp, pc}
 
 printaverage:
 	ldr	r1, addra
