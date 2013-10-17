@@ -1,3 +1,4 @@
+/* Prints "Hello world!" to stdout */
 	.text
 	.global main
 main:

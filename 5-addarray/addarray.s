@@ -1,3 +1,4 @@
+/* extern int addarray(int n, int* arr) */
 	.text
 	.global addarray
 

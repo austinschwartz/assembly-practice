@@ -1,3 +1,4 @@
+/* Adds 2 integers, stored in global variables */
 	.section 	.rodata
 printfArg:
 	.ascii	"c=%d\n"

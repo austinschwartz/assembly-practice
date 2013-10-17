@@ -1,3 +1,4 @@
+/* Adds 2 integers */
 	.text
 	.global main
 main:

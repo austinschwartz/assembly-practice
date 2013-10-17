@@ -1,3 +1,4 @@
+/* Takes 2 integers from stdin and prints the max, min, and average of the two numbers */ 
 	.section	.data
 	.align	2
 	
