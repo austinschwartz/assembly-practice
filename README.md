@@ -1,4 +1,4 @@
-arm-practice
+assembly-practice
 ============
 
-Practice with ARM Assembly
+Practice with ARM/x86-64 Assembly
